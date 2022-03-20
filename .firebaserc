@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "crud-df7d3": {
+      "hosting": {
+        "Fgoa-Inventario": [
+          "crud-df7d3"
+        ]
+      }
+    }
+  }
+}

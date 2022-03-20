@@ -1,0 +1,99 @@
+<!-- <p>editar1 works!</p> -->
+<!-- {{ value | json }} -->
+
+<div style="padding: 30px;">
+    <button type="button" class="btn btn-info" style="float: right; color: white; background-color: #aca298; border: none;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+<div class="m-5">
+
+    <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="lista1Form" >
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <input type="text" class="form-control" placeholder="Monitor" formControlName="articulo" 
+            [class]="isValidField('articulo')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('articulo')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Marca</label>
+            <input type="text" class="form-control" placeholder="Dell" formControlName="marca"
+            [class]="isValidField('marca')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('marca')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Nombre Pc</label>
+            <input type="text" class="form-control" placeholder="sistemasfgoa" formControlName="nombre"
+            [class]="isValidField('nombre')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('nombre')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>N° Serie</label>
+            <input type="text" class="form-control" placeholder="QWET-00" formControlName="serie"
+            [class]="isValidField('serie')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('serie')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ip</label>
+            <input type="text" class="form-control" placeholder="172.16.50" formControlName="ip"
+            [class]="isValidField('ip')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('ip')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Mac Address</label>
+            <input type="text" class="form-control" placeholder="00:ee:tg:09" formControlName="mac"
+            [class]="isValidField('mac')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('mac')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Accesorios</label>
+            <input type="text" class="form-control" placeholder="Mouse" formControlName="accesorios"
+            [class]="isValidField('accesorios')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('accesorios')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ubicacion</label>
+            <input type="text" class="form-control" placeholder="Site" formControlName="ubicacion"
+            [class]="isValidField('ubicacion')">
+            <div class="invalid-feedback">
+                <span *ngIf="lista1Form.get('ubicacion')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="d-grid gap-2 m-2">
+            <!-- <button class="btn btn-primary" type="button">Button</button> -->
+            <button class="btn btn-info" type="submit" style="color: #505050; border-radius: 5px; background-color: #c9b18b; border: none;">Guardar</button>
+          </div>
+
+    </form>
+
+    <!-- {{ value | json }} -->
+
+</div>
