@@ -13,7 +13,15 @@ const routes: Routes = [
   
   { path: 'editar1', loadChildren: () => import('./pages/inv1/editar1/editar1.module').then(m => m.Editar1Module) }, 
   
-  { path: 'nuevo1', loadChildren: () => import('./pages/inv1/nuevo1/nuevo1.module').then(m => m.Nuevo1Module) }
+  { path: 'nuevo1', loadChildren: () => import('./pages/inv1/nuevo1/nuevo1.module').then(m => m.Nuevo1Module) },
+
+  { path: 'nuevoant', loadChildren: () => import('./pages/antenas/nuevoant/nuevoant.module').then(m => m.NuevoantModule) },
+
+  { path: 'listaant', loadChildren: () => import('./pages/antenas/listaant/listaant.module').then(m => m.ListaantModule) },
+
+  { path: 'editarant', loadChildren: () => import('./pages/antenas/editarant/editarant.module').then(m => m.EditarantModule) },
+
+  { path: 'detallesant', loadChildren: () => import('./pages/antenas/detallesant/detallesant.module').then(m => m.DetallesantModule) }
 
 ];
 

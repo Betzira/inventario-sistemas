@@ -2,9 +2,9 @@
     
     <div style="padding: 30px;">
 
-        <h5 style="color: #505050;">Computadoras</h5>
+        <h5 style="color: #505050;">Antenas</h5>
 
-        <button [routerLink]="'/nuevo1'" type="button" class="btn btn-info m-1" style="float: right; color: white; background-color: #aca298; border: none;">
+        <button [routerLink]="'/nuevoant'" type="button" class="btn btn-info m-1" style="float: right; color: white; background-color: #aca298; border: none;">
             <i class="bi bi-plus-lg" style="color: green;"></i>
             Nuevo
         </button>
@@ -25,27 +25,23 @@
             <tr>
                 <th>Artículo</th>
                 <th>Marca</th>
-                <th>Nombre Pc</th>
-                <th>N° Serie</th>
+                <th>Modelo</th>
                 <th>Ip</th>
                 <th>Mac Address</th>
-                <th>Accesorios</th>
+                <th>Red</th>
                 <th>Ubicacion</th>
                 <th class="d-none d-sm-block">Acciones</th>
-                <!-- <th>Editar</th>
-                <th>Borrar</th> -->
             </tr>
         </thead>
         <tbody >
-            <tr style="background-color: #e6dec8" *ngFor="let item1 of articulos$ | async" >
-                <td>{{ item1.articulo }}</td>
-                <td>{{ item1.marca }}</td>
-                <td>{{ item1.nombre }}</td>
-                <td>{{ item1.serie }}</td>
-                <td>{{ item1.ip }}</td>
-                <td>{{ item1.mac }}</td>
-                <td>{{ item1.accesorios }}</td>
-                <td>{{ item1.ubicacion }}</td>
+            <tr style="background-color: #e6dec8" *ngFor="let itemant of antenaas$ | async" >
+                <td>{{ itemant.articuloant }}</td>
+                <td>{{ itemant.marcaant }}</td>
+                <td>{{ itemant.modeloant }}</td>
+                <td>{{ itemant.ipant }}</td>
+                <td>{{ itemant.macant }}</td>
+                <td>{{ itemant.redant }}</td>
+                <td>{{ itemant.ubiant }}</td>
 
                 <!-- <td class="bnt-group d-none d-sm-block"><button type="button" class="btn btn-info"><i class="bi bi-eye" style="color: green;"></i></button></td>
 
@@ -56,13 +52,13 @@
                 <td class="bnt-group d-none d-sm-block">
                 
                 <!-- ver -->
-                <button type="button" class="btn btn-info m-1" (click)="onGoToSee(item1)" style="background-color: #c9b18b; border: none;"><i class="bi bi-eye" style="color: green;"></i></button>
+                <button type="button" class="btn btn-info m-1" (click)="onGoToSee(itemant)" style="background-color: #c9b18b; border: none;"><i class="bi bi-eye" style="color: green;"></i></button>
 
                 <!-- editar -->
-                <button type="button" class="btn btn-info m-1" (click)="onGoToEdit(item1)" style="background-color: #c9b18b; border: none;"><i class="bi bi-pencil-square" style="color: blue;"></i></button>
+                <button type="button" class="btn btn-info m-1" (click)="onGoToEdit(itemant)"  style="background-color: #c9b18b; border: none;"><i class="bi bi-pencil-square" style="color: blue;"></i></button>
 
                 <!-- borrar -->
-                <button type="button" class="btn btn-info m-1" (click)="onGoToDelete(item1.id!)" style="background-color: #c9b18b; border: none;"><i class="bi bi-trash3-fill" style="color: red;"></i></button>
+                <button type="button" class="btn btn-info m-1" (click)="onGoToDelete(itemant.id!)"  style="background-color: #c9b18b; border: none;"><i class="bi bi-trash3-fill" style="color: red;"></i></button>
 
                 </td>
             </tr>

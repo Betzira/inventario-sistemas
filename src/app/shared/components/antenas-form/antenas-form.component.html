@@ -1,0 +1,86 @@
+<div style="padding: 30px;">
+    <button type="button" class="btn btn-info" style="float: right; color: white;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+<div class="m-5">
+
+    <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="antenaaForm" >
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <input type="text" class="form-control" placeholder="Articulo" formControlName="articuloant"
+            [class]="isValidField('articuloant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('articuloant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Marca</label>
+            <input type="text" class="form-control" placeholder="Marca" formControlName="marcaant"
+            [class]="isValidField('marcaant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('marcaant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Modelo</label>
+            <input type="text" class="form-control" placeholder="Modelo" formControlName="modeloant"
+            [class]="isValidField('modeloant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('modeloant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ip</label>
+            <input type="text" class="form-control" placeholder="Ip" formControlName="ipant"
+            [class]="isValidField('ipant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('ipant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Mac Address</label>
+            <input type="text" class="form-control" placeholder="Mac" formControlName="macant"
+            [class]="isValidField('macant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('macant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Red</label>
+            <input type="text" class="form-control" placeholder="Red" formControlName="redant"
+            [class]="isValidField('redant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('redant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ubicación</label>
+            <input type="text" class="form-control" placeholder="Ubicación" formControlName="ubiant"
+            [class]="isValidField('ubiant')">
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('ubiant')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="d-grid gap-2 m-2">
+            <button class="btn btn-info" type="submit">Guardar cambios</button>
+          </div>
+
+    </form>
+
+
+</div>
+
