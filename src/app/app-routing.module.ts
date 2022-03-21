@@ -21,7 +21,15 @@ const routes: Routes = [
 
   { path: 'editarant', loadChildren: () => import('./pages/antenas/editarant/editarant.module').then(m => m.EditarantModule) },
 
-  { path: 'detallesant', loadChildren: () => import('./pages/antenas/detallesant/detallesant.module').then(m => m.DetallesantModule) }
+  { path: 'detallesant', loadChildren: () => import('./pages/antenas/detallesant/detallesant.module').then(m => m.DetallesantModule) },
+
+  { path: 'detallescel', loadChildren: () => import('./pages/celulares/detallescel/detallescel.module').then(m => m.DetallescelModule) },
+
+  { path: 'editarcel', loadChildren: () => import('./pages/celulares/editarcel/editarcel.module').then(m => m.EditarcelModule) },
+
+  { path: 'listacel', loadChildren: () => import('./pages/celulares/listacel/listacel.module').then(m => m.ListacelModule) },
+
+  { path: 'nuevocel', loadChildren: () => import('./pages/celulares/nuevocel/nuevocel.module').then(m => m.NuevocelModule) }
 
 ];
 

@@ -1,0 +1,57 @@
+<div style="padding: 30px;">
+
+    <h5 style="color: #505050;">Detalles de artículo</h5>
+
+    <button type="button" class="btn btn-info" style="float: right; color: white; background-color: #aca298; border: none;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+
+<div class="card m-5">
+
+    <div class="card-header" style="background-color: #c9b18b; color: #000000; text-align: center;">
+        <h4>{{ celularr.articulocel }}</h4>
+    </div>
+
+    <div class="card-body" style="background-color: #e6dec8;">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Marca: <h5>{{ celularr.marcacel }}</h5>
+            </li>
+            <li class="list-group-item">
+                Modelo: <h5>{{ celularr.modelocel }}</h5>
+            </li>
+            <li class="list-group-item">
+                N° Teléfono: <h5>{{ celularr.telefonocel }}</h5>
+            </li>
+            <li class="list-group-item">
+                E-Mail: <h5>{{ celularr.mailcel }}</h5>
+            </li>
+            <li class="list-group-item">
+                Características: <h5>{{ celularr.caractcel }}</h5>
+            </li>
+            <li class="list-group-item">
+                Mac Address: <h5>{{ celularr.maccel }}</h5>
+            </li>
+        </ul>
+    </div>
+
+    <div class="btn-group" role="group" style="padding: 20px;">
+
+        <button type="button" class="btn btn-info m-2 btn-sm" (click)="onGoToEdit()" style="color: #505050; border-radius: 5px; background-color: #c9b18b; border: none;">
+            <i class="bi bi-pencil-square" style="color: blue;"></i>
+            Editar
+        </button>
+
+        <button type="button" class="btn btn-info m-2 btn-sm" (click)="onGoToDelete()" style="color: #505050; border-radius: 5px; background-color: #c9b18b; border: none;">
+            <i class="bi bi-trash3-fill" style="color: red;"></i>
+            Borrar
+        </button>
+    </div>
+
+
+</div>

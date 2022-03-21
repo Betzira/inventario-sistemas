@@ -11,10 +11,13 @@ import { AngularFirestore } from '@angular/fire/firestore'
 import { environment } from 'src/environments/environment';
 // import { AntenasFormComponent } from './shared/components/antenas-form/antenas-form.component';
 import { AntenasFormModule } from './shared/components/antenas-form/antenas-form.module';
+// import { CelularesFormComponent } from './shared/components/celulares-form/celulares-form.component';
+import { CelularesFormModule } from './shared/components/celulares-form/celulares-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // CelularesFormComponent,
     // AntenasFormComponent,
     // ArticuloFormComponent
   ],
@@ -23,7 +26,8 @@ import { AntenasFormModule } from './shared/components/antenas-form/antenas-form
     AppRoutingModule,
     ArticuloFormModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AntenasFormModule
+    AntenasFormModule,
+    CelularesFormModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
