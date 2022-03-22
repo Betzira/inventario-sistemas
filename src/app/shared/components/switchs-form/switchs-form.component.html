@@ -1,0 +1,88 @@
+<div style="padding: 30px;">
+    <button type="button" class="btn btn-info" style="float: right; color: white; background-color: #aca298; border: none;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+<div class="m-5">
+
+    <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="switchhForm" >
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <input type="text" class="form-control" placeholder="Articulo" formControlName="articuloswi"
+            [class]="isValidField('articuloswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('articuloswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Marca</label>
+            <input type="text" class="form-control" placeholder="Marca" formControlName="marcaswi"
+            [class]="isValidField('marcaswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('marcaswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Modelo</label>
+            <input type="text" class="form-control" placeholder="Modelo" formControlName="modeloswi"
+            [class]="isValidField('modeloswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('modeloswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ubicación</label>
+            <input type="text" class="form-control" placeholder="Ubicación" formControlName="ubiswi"
+            [class]="isValidField('ubiswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('ubiswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>N° Serie</label>
+            <input type="text" class="form-control" placeholder="N° Serie" formControlName="serieswi"
+            [class]="isValidField('serieswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('serieswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Servicio</label>
+            <input type="text" class="form-control" placeholder="Servicio" formControlName="servicioswi"
+            [class]="isValidField('servicioswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('servicioswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Departamento</label>
+            <input type="text" class="form-control" placeholder="Departamento" formControlName="departamentoswi"
+            [class]="isValidField('departamentoswi')">
+            <div class="invalid-feedback">
+                <span *ngIf="switchhForm.get('departamentoswi')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="d-grid gap-2 m-2">
+            <button class="btn btn-info" type="submit" style="color: #505050; border-radius: 5px; background-color: #c9b18b; border: none;">Guardar cambios</button>
+          </div>
+
+    </form>
+
+
+</div>
+
+
+

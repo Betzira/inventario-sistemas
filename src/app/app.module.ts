@@ -15,10 +15,13 @@ import { AntenasFormModule } from './shared/components/antenas-form/antenas-form
 import { CelularesFormModule } from './shared/components/celulares-form/celulares-form.module';
 // import { ImpresorasFormComponent } from './shared/components/impresoras-form/impresoras-form.component';
 import { ImpresorasFormModule } from './shared/components/impresoras-form/impresoras-form.module';
+// import { SwitchsFormComponent } from './shared/components/switchs-form/switchs-form.component';
+import { SwitchsFormModule } from './shared/components/switchs-form/switchs-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // SwitchsFormComponent,
     // ImpresorasFormComponent,
     // CelularesFormComponent,
     // AntenasFormComponent,
@@ -31,7 +34,8 @@ import { ImpresorasFormModule } from './shared/components/impresoras-form/impres
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AntenasFormModule,
     CelularesFormModule,
-    ImpresorasFormModule
+    ImpresorasFormModule,
+    SwitchsFormModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

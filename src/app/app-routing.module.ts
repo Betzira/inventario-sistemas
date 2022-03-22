@@ -37,7 +37,15 @@ const routes: Routes = [
 
   { path: 'listaimp', loadChildren: () => import('./pages/impresoras/listaimp/listaimp.module').then(m => m.ListaimpModule) },
 
-  { path: 'nuevoimp', loadChildren: () => import('./pages/impresoras/nuevoimp/nuevoimp.module').then(m => m.NuevoimpModule) }
+  { path: 'nuevoimp', loadChildren: () => import('./pages/impresoras/nuevoimp/nuevoimp.module').then(m => m.NuevoimpModule) },
+
+  { path: 'detallesswi', loadChildren: () => import('./pages/switchs/detallesswi/detallesswi.module').then(m => m.DetallesswiModule) },
+
+  { path: 'editarswi', loadChildren: () => import('./pages/switchs/editarswi/editarswi.module').then(m => m.EditarswiModule) },
+
+  { path: 'listaswi', loadChildren: () => import('./pages/switchs/listaswi/listaswi.module').then(m => m.ListaswiModule) },
+
+  { path: 'nuevoswi', loadChildren: () => import('./pages/switchs/nuevoswi/nuevoswi.module').then(m => m.NuevoswiModule) }
 
 ];
 
