@@ -1,0 +1,71 @@
+<div style="padding: 30px;">
+    <button type="button" class="btn btn-info" style="float: right; color: white;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+<div class="m-5">
+
+    <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="impresoraaForm" >
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <input type="text" class="form-control" placeholder="Articulo" formControlName="articuloimp"
+            [class]="isValidField('articuloimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('articuloimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Marca</label>
+            <input type="text" class="form-control" placeholder="Marca" formControlName="marcaimp"
+            [class]="isValidField('marcaimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('marcaimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Modelo</label>
+            <input type="text" class="form-control" placeholder="Modelo" formControlName="modeloimp"
+            [class]="isValidField('modeloimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('modeloimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ubicación</label>
+            <input type="text" class="form-control" placeholder="Ubicación" formControlName="ubiimp"
+            [class]="isValidField('ubiimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('ubiimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <label>N° Serie</label>
+            <input type="text" class="form-control" placeholder="N° Serie" formControlName="serieimp"
+            [class]="isValidField('serieimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('serieimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="d-grid gap-2 m-2">
+            <button class="btn btn-info" type="submit">Guardar cambios</button>
+          </div>
+
+    </form>
+
+
+</div>
+
+
+

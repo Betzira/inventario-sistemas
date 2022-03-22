@@ -29,7 +29,15 @@ const routes: Routes = [
 
   { path: 'listacel', loadChildren: () => import('./pages/celulares/listacel/listacel.module').then(m => m.ListacelModule) },
 
-  { path: 'nuevocel', loadChildren: () => import('./pages/celulares/nuevocel/nuevocel.module').then(m => m.NuevocelModule) }
+  { path: 'nuevocel', loadChildren: () => import('./pages/celulares/nuevocel/nuevocel.module').then(m => m.NuevocelModule) },
+
+  { path: 'detallesimp', loadChildren: () => import('./pages/impresoras/detallesimp/detallesimp.module').then(m => m.DetallesimpModule) },
+
+  { path: 'editarimp', loadChildren: () => import('./pages/impresoras/editarimp/editarimp.module').then(m => m.EditarimpModule) },
+
+  { path: 'listaimp', loadChildren: () => import('./pages/impresoras/listaimp/listaimp.module').then(m => m.ListaimpModule) },
+
+  { path: 'nuevoimp', loadChildren: () => import('./pages/impresoras/nuevoimp/nuevoimp.module').then(m => m.NuevoimpModule) }
 
 ];
 

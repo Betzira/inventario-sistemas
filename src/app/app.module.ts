@@ -13,10 +13,13 @@ import { environment } from 'src/environments/environment';
 import { AntenasFormModule } from './shared/components/antenas-form/antenas-form.module';
 // import { CelularesFormComponent } from './shared/components/celulares-form/celulares-form.component';
 import { CelularesFormModule } from './shared/components/celulares-form/celulares-form.module';
+// import { ImpresorasFormComponent } from './shared/components/impresoras-form/impresoras-form.component';
+import { ImpresorasFormModule } from './shared/components/impresoras-form/impresoras-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // ImpresorasFormComponent,
     // CelularesFormComponent,
     // AntenasFormComponent,
     // ArticuloFormComponent
@@ -27,7 +30,8 @@ import { CelularesFormModule } from './shared/components/celulares-form/celulare
     ArticuloFormModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AntenasFormModule,
-    CelularesFormModule
+    CelularesFormModule,
+    ImpresorasFormModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
