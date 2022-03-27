@@ -1,0 +1,74 @@
+
+    
+    <div style="padding: 30px;">
+
+        <h5 style="color: #505050;">Servidores</h5>
+
+        <button [routerLink]="'/nuevoserv'" type="button" class="btn btn-info m-1" style="float: right; color: white; background-color: #aca298; border: none;">
+            <i class="bi bi-plus-lg" style="color: green;"></i>
+            Nuevo
+        </button>
+
+        <button type="button" value="Imprimir" onclick="javascript:window.print()" class="btn btn-info m-1" style="float: right; color: white; background-color: #aca298; border: none;">
+            <i class="bi bi-printer-fill" style="color: gray"></i>
+            Imprimir
+        </button>
+
+    </div>
+    
+
+<div class="m-5"> 
+
+    <table class="table table-responsive">
+        <!-- <table class="table-hover"></table> -->
+        <thead style="background-color: #c9b18b; color: #505050;">
+            <tr>
+                <th>Artículo</th>
+                <th>Marca</th>
+                <th>Nombre</th>
+                <th>N° Serie</th>
+                <th>Ip</th>
+                <th>Mac Address</th>
+                <th>Tipo de servidor</th>
+                <th class="d-none d-sm-block">Acciones</th>
+            </tr>
+        </thead>
+        <tbody >
+            <tr style="background-color: #e6dec8" *ngFor="let itemserv of servidorrs$ | async" >
+                <td>{{ itemserv.articuloserv }}</td>
+                <td>{{ itemserv.marcaserv }}</td>
+                <td>{{ itemserv.nombreserv }}</td>
+                <td>{{ itemserv.serieserv }}</td>
+                <td>{{ itemserv.ipserv }}</td>
+                <td>{{ itemserv.macserv }}</td>
+                <td>{{ itemserv.tiposerv }}</td>
+
+                <!-- <td class="bnt-group d-none d-sm-block"><button type="button" class="btn btn-info"><i class="bi bi-eye" style="color: green;"></i></button></td>
+
+                <td class="bnt-group d-none d-sm-block"><button type="button" class="btn btn-info"><i class="bi bi-pencil-square" style="color: blue;"></i></button></td>
+
+                <td><button type="button" class="btn btn-info"><i class="bi bi-trash3-fill" style="color: red;"></i></button></td> -->
+
+                <td class="bnt-group d-none d-sm-block">
+                
+                <!-- ver -->
+                <button type="button" class="btn btn-info m-1" (click)="onGoToSee(itemserv)" style="background-color: #c9b18b; border: none;"><i class="bi bi-eye" style="color: green;"></i></button>
+
+                <!-- editar -->
+                <button type="button" class="btn btn-info m-1" (click)="onGoToEdit(itemserv)"  style="background-color: #c9b18b; border: none;"><i class="bi bi-pencil-square" style="color: blue;"></i></button>
+
+                <!-- borrar -->
+                <button type="button" class="btn btn-info m-1" (click)="onGoToDelete(itemserv.id!)"  style="background-color: #c9b18b; border: none;"><i class="bi bi-trash3-fill" style="color: red;"></i></button>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</div>
+
+
+
+    
+

@@ -17,10 +17,13 @@ import { CelularesFormModule } from './shared/components/celulares-form/celulare
 import { ImpresorasFormModule } from './shared/components/impresoras-form/impresoras-form.module';
 // import { SwitchsFormComponent } from './shared/components/switchs-form/switchs-form.component';
 import { SwitchsFormModule } from './shared/components/switchs-form/switchs-form.module';
+// import { ServidoresFormComponent } from './shared/components/servidores-form/servidores-form.component';
+import { ServidoresFormModule } from './shared/components/servidores-form/servidores-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // ServidoresFormComponent,
     // SwitchsFormComponent,
     // ImpresorasFormComponent,
     // CelularesFormComponent,
@@ -35,7 +38,8 @@ import { SwitchsFormModule } from './shared/components/switchs-form/switchs-form
     AntenasFormModule,
     CelularesFormModule,
     ImpresorasFormModule,
-    SwitchsFormModule
+    SwitchsFormModule,
+    ServidoresFormModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

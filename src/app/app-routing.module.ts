@@ -45,7 +45,15 @@ const routes: Routes = [
 
   { path: 'listaswi', loadChildren: () => import('./pages/switchs/listaswi/listaswi.module').then(m => m.ListaswiModule) },
 
-  { path: 'nuevoswi', loadChildren: () => import('./pages/switchs/nuevoswi/nuevoswi.module').then(m => m.NuevoswiModule) }
+  { path: 'nuevoswi', loadChildren: () => import('./pages/switchs/nuevoswi/nuevoswi.module').then(m => m.NuevoswiModule) },
+
+  { path: 'detallesserv', loadChildren: () => import('./pages/servidores/detallesserv/detallesserv.module').then(m => m.DetallesservModule) },
+
+  { path: 'editarserv', loadChildren: () => import('./pages/servidores/editarserv/editarserv.module').then(m => m.EditarservModule) },
+
+  { path: 'listaserv', loadChildren: () => import('./pages/servidores/listaserv/listaserv.module').then(m => m.ListaservModule) },
+
+  { path: 'nuevoserv', loadChildren: () => import('./pages/servidores/nuevoserv/nuevoserv.module').then(m => m.NuevoservModule) }
 
 ];
 
