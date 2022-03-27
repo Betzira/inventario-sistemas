@@ -50,7 +50,7 @@ export class CelularesFormComponent implements OnInit {
       marcacel: ['', [Validators.required]],
       modelocel: ['', [Validators.required]],
       telefonocel: ['', [Validators.required]],
-      mailcel: ['', [Validators.required]],
+      mailcel: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       caractcel: ['', [Validators.required]],
       maccel: ['', [Validators.required]]
     });
