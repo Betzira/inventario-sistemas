@@ -1,0 +1,60 @@
+<div style="padding: 30px;">
+    <button type="button" class="btn btn-info" style="float: right; color: white; background-color: #aca298; border: none;" (click)="onGoBackToList()">
+        <i class="bi bi-arrow-left-circle-fill" style="color: blue"></i>
+        Volver
+    </button>
+</div>
+
+<br>
+
+<div class="m-5">
+
+    <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="resguardooForm" >
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <input type="text" class="form-control" placeholder="Articulo" formControlName="articulores"
+            [class]="isValidField('articulores')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('articulores')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Marca</label>
+            <input type="text" class="form-control" placeholder="Marca" formControlName="marcares"
+            [class]="isValidField('marcares')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('marcares')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Modelo</label>
+            <input type="text" class="form-control" placeholder="Modelo" formControlName="modelores"
+            [class]="isValidField('modelores')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('modelores')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Cantidad</label>
+            <input type="text" class="form-control" placeholder="Cantidad total" formControlName="cantidadres"
+            [class]="isValidField('cantidadres')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('cantidadres')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <br>
+    
+        <div class="d-grid gap-2 m-2">
+            <button class="btn btn-info" type="submit" style="color: #505050; border-radius: 5px; background-color: #c9b18b; border: none;">Guardar cambios</button>
+          </div>
+
+    </form>
+
+
+</div>
+
+

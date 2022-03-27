@@ -53,7 +53,15 @@ const routes: Routes = [
 
   { path: 'listaserv', loadChildren: () => import('./pages/servidores/listaserv/listaserv.module').then(m => m.ListaservModule) },
 
-  { path: 'nuevoserv', loadChildren: () => import('./pages/servidores/nuevoserv/nuevoserv.module').then(m => m.NuevoservModule) }
+  { path: 'nuevoserv', loadChildren: () => import('./pages/servidores/nuevoserv/nuevoserv.module').then(m => m.NuevoservModule) },
+
+  { path: 'detallesres', loadChildren: () => import('./pages/resguardos/detallesres/detallesres.module').then(m => m.DetallesresModule) },
+
+  { path: 'editarres', loadChildren: () => import('./pages/resguardos/editarres/editarres.module').then(m => m.EditarresModule) },
+
+  { path: 'listares', loadChildren: () => import('./pages/resguardos/listares/listares.module').then(m => m.ListaresModule) },
+
+  { path: 'nuevores', loadChildren: () => import('./pages/resguardos/nuevores/nuevores.module').then(m => m.NuevoresModule) }
 
 ];
 

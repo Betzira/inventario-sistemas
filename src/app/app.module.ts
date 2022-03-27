@@ -19,10 +19,13 @@ import { ImpresorasFormModule } from './shared/components/impresoras-form/impres
 import { SwitchsFormModule } from './shared/components/switchs-form/switchs-form.module';
 // import { ServidoresFormComponent } from './shared/components/servidores-form/servidores-form.component';
 import { ServidoresFormModule } from './shared/components/servidores-form/servidores-form.module';
+// import { ResguardosFormComponent } from './shared/components/resguardos-form/resguardos-form.component';
+import { ResguardosFormModule } from './shared/components/resguardos-form/resguardos-form.module';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // ResguardosFormComponent,
     // ServidoresFormComponent,
     // SwitchsFormComponent,
     // ImpresorasFormComponent,
@@ -39,7 +42,8 @@ import { ServidoresFormModule } from './shared/components/servidores-form/servid
     CelularesFormModule,
     ImpresorasFormModule,
     SwitchsFormModule,
-    ServidoresFormModule
+    ServidoresFormModule,
+    ResguardosFormModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
