@@ -46,13 +46,15 @@ export class CelularesFormComponent implements OnInit {
   private initForm(): void {
     this.celularrForm = this.fb.group(
       {
-      articulocel: ['Celular Alice', [Validators.required]],
+      usuariocel: ['', [Validators.required]],
+      articulocel: ['', [Validators.required]],
       marcacel: ['', [Validators.required]],
       modelocel: ['', [Validators.required]],
       telefonocel: ['', [Validators.required]],
-      mailcel: ['', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
+      mailcel: ['', [Validators.required]],
       caractcel: ['', [Validators.required]],
-      maccel: ['', [Validators.required]]
+      maccel: ['', [Validators.required]],
+      seriecel: ['', [Validators.required]]
     });
   }
 

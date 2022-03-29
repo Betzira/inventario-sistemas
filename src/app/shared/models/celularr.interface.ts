@@ -1,5 +1,6 @@
 export interface Celularr {
     id?: string;
+    usuariocel: string;
     articulocel: string;
     marcacel: string;
     modelocel: string;
@@ -7,4 +8,5 @@ export interface Celularr {
     mailcel: string;
     caractcel: string;
     maccel: string;
+    seriecel: string;
 }

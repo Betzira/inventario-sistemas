@@ -14,11 +14,17 @@
 <div class="card m-5">
 
     <div class="card-header" style="background-color: #c9b18b; color: #000000; text-align: center;">
-        <h4>{{ celularr.articulocel }}</h4>
+        <!-- <h4>{{ celularr.articulocel }}</h4> -->
     </div>
 
     <div class="card-body" style="background-color: #e6dec8;">
         <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Usuario: <h5>{{ celularr.usuariocel }}</h5>
+            </li>
+            <li class="list-group-item">
+                Plataforma: <h5>{{ celularr.articulocel }}</h5>
+            </li>
             <li class="list-group-item">
                 Marca: <h5>{{ celularr.marcacel }}</h5>
             </li>
@@ -29,13 +35,16 @@
                 N° Teléfono: <h5>{{ celularr.telefonocel }}</h5>
             </li>
             <li class="list-group-item">
-                E-Mail: <h5>{{ celularr.mailcel }}</h5>
+                IMEI: <h5>{{ celularr.mailcel }}</h5>
             </li>
             <li class="list-group-item">
                 Características: <h5>{{ celularr.caractcel }}</h5>
             </li>
             <li class="list-group-item">
                 Mac Address: <h5>{{ celularr.maccel }}</h5>
+            </li>
+            <li class="list-group-item">
+                N° Serie: <h5>{{ celularr.seriecel }}</h5>
             </li>
         </ul>
     </div>

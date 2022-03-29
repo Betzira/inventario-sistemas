@@ -23,18 +23,21 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
-                <th>Artículo</th>
+                <th>Usuario</th>
+                <th>Plataforma</th>
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>N° Teléfono</th>
-                <th>E-Mail</th>
+                <th>IMEI</th>
                 <th>Características</th>
                 <th>Mac Address</th>
+                <th>N° Serie</th>
                 <th class="d-none d-sm-block">Acciones</th>
             </tr>
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let itemcel of celularrs$ | async" >
+                <td>{{ itemcel.usuariocel }}</td>
                 <td>{{ itemcel.articulocel }}</td>
                 <td>{{ itemcel.marcacel }}</td>
                 <td>{{ itemcel.modelocel }}</td>
@@ -42,6 +45,7 @@
                 <td>{{ itemcel.mailcel }}</td>
                 <td>{{ itemcel.caractcel }}</td>
                 <td>{{ itemcel.maccel }}</td>
+                <td>{{ itemcel.seriecel }}</td>
 
                 <!-- <td class="bnt-group d-none d-sm-block"><button type="button" class="btn btn-info"><i class="bi bi-eye" style="color: green;"></i></button></td>
 
