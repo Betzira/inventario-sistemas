@@ -46,11 +46,12 @@ export class ImpresorasFormComponent implements OnInit {
   private initForm(): void {
     this.impresoraaForm = this.fb.group(
       {
-      articuloimp: ['Mini Printer', [Validators.required]],
+      articuloimp: ['', [Validators.required]],
       marcaimp: ['', [Validators.required]],
       modeloimp: ['', [Validators.required]],
       ubiimp: ['', [Validators.required]],
-      serieimp: ['', [Validators.required]]
+      serieimp: ['', [Validators.required]],
+      ipimp: ['', [Validators.required]]
     });
   }
 

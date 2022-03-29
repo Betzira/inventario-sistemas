@@ -10,14 +10,31 @@
 <div class="m-5">
 
     <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="impresoraaForm" >
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <label>Artículo</label>
             <input type="text" class="form-control" placeholder="Articulo" formControlName="articuloimp"
             [class]="isValidField('articuloimp')">
             <div class="invalid-feedback">
                 <span *ngIf="impresoraaForm.get('articuloimp')" class="text-danger">Campo requerido*</span>
             </div>
-        </div>
+        </div> -->
+
+        <!-- Elegir tipo de impresora -->
+
+        <div class="col-md-3">
+            <label>Artículo</label>
+            <select class="form-select" formControlName="articuloimp"
+            [class]="isValidField('articuloimp')" required>
+              <option selected disabled value="">Elegir...</option>
+              <option>Impresora</option>
+              <option>Mini Printer</option>
+            </select>
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('articuloimp')" class="text-danger">Campo requerido*</span>
+            </div>
+          </div>
+
+          <!-- Elegir tipo de impresora -->
 
         <div class="col-md-3">
             <label>Marca</label>
@@ -53,6 +70,15 @@
             [class]="isValidField('serieimp')">
             <div class="invalid-feedback">
                 <span *ngIf="impresoraaForm.get('serieimp')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Ip</label>
+            <input type="text" class="form-control" placeholder="Ip" formControlName="ipimp"
+            [class]="isValidField('ipimp')">
+            <div class="invalid-feedback">
+                <span *ngIf="impresoraaForm.get('ipimp')" class="text-danger">Campo requerido*</span>
             </div>
         </div>
 

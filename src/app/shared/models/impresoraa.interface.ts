@@ -5,4 +5,5 @@ export interface Impresoraa {
     modeloimp: string;
     ubiimp: string;
     serieimp: string;
+    ipimp: string;
 }
