@@ -38,8 +38,26 @@
         </div>
 
         <div class="col-md-3">
+            <label>Estado(Sellados)</label>
+            <input type="number" class="form-control" placeholder="# sellados" formControlName="selladosres"
+            [class]="isValidField('selladosres')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('selladosres')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <label>Estado(En uso)</label>
+            <input type="number" class="form-control" placeholder="# en uso" formControlName="usores"
+            [class]="isValidField('usores')">
+            <div class="invalid-feedback">
+                <span *ngIf="resguardooForm.get('usores')" class="text-danger">Campo requerido*</span>
+            </div>
+        </div>
+
+        <div class="col-md-3">
             <label>Cantidad</label>
-            <input type="text" class="form-control" placeholder="Cantidad total" formControlName="cantidadres"
+            <input type="number" class="form-control" placeholder="Cantidad total" formControlName="cantidadres"
             [class]="isValidField('cantidadres')">
             <div class="invalid-feedback">
                 <span *ngIf="resguardooForm.get('cantidadres')" class="text-danger">Campo requerido*</span>

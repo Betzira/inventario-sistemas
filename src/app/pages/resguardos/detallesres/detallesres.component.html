@@ -14,16 +14,25 @@
 <div class="card m-5">
 
     <div class="card-header" style="background-color: #c9b18b; color: #000000; text-align: center;">
-        <h4>{{ resguardoo.articulores }}</h4>
+        <!-- <h4>{{ resguardoo.articulores }}</h4> -->
     </div>
 
     <div class="card-body" style="background-color: #e6dec8;">
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
+                Marca: <h5>{{ resguardoo.articulores }}</h5>
+            </li>
+            <li class="list-group-item">
                 Marca: <h5>{{ resguardoo.marcares }}</h5>
             </li>
             <li class="list-group-item">
                 Modelo: <h5>{{ resguardoo.modelores }}</h5>
+            </li>
+            <li class="list-group-item">
+                Estado(Sellados): <h5>{{ resguardoo.selladosres }}</h5>
+            </li>
+            <li class="list-group-item">
+                Estado(En uso): <h5>{{ resguardoo.usores }}</h5>
             </li>
             <li class="list-group-item">
                 Cantidad total: <h5>{{ resguardoo.cantidadres }}</h5>

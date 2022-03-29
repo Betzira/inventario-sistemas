@@ -49,6 +49,8 @@ export class ResguardosFormComponent implements OnInit {
       articulores: ['', [Validators.required]],
       marcares: ['', [Validators.required]],
       modelores: ['', [Validators.required]],
+      selladosres: ['', [Validators.required]],
+      usores: ['', [Validators.required]],
       cantidadres: ['', [Validators.required]]
     });
   }
