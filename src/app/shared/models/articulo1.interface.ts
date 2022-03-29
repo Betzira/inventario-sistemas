@@ -1,6 +1,6 @@
 export interface Articulo {
     id?: string;
-    articulo: string;
+    modelo: string;
     marca: string;
     nombre: string;
     serie: string;

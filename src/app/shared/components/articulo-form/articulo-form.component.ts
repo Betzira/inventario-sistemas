@@ -47,7 +47,7 @@ export class ArticuloFormComponent implements OnInit {
   private initForm(): void {
     this.lista1Form = this.fb.group(
       {
-      articulo: ['', [Validators.required]],
+      modelo: ['', [Validators.required]],
       marca: ['', [Validators.required]],
       nombre: ['', [Validators.required]],
       serie: ['', [Validators.required]],

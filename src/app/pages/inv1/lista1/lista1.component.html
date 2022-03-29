@@ -23,7 +23,7 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
-                <th>Artículo</th>
+                <th>Modelo</th>
                 <th>Marca</th>
                 <th>Nombre Pc</th>
                 <th>N° Serie</th>
@@ -38,7 +38,7 @@
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let item1 of articulos$ | async" >
-                <td>{{ item1.articulo }}</td>
+                <td>{{ item1.modelo }}</td>
                 <td>{{ item1.marca }}</td>
                 <td>{{ item1.nombre }}</td>
                 <td>{{ item1.serie }}</td>

@@ -14,17 +14,17 @@
 
     <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="lista1Form" >
         <div class="col-md-3">
-            <label>Artículo</label>
-            <input type="text" class="form-control" placeholder="Monitor" formControlName="articulo" 
-            [class]="isValidField('articulo')">
+            <label>Modelo</label>
+            <input type="text" class="form-control" placeholder="Modelo" formControlName="modelo" 
+            [class]="isValidField('modelo')">
             <div class="invalid-feedback">
-                <span *ngIf="lista1Form.get('articulo')" class="text-danger">Campo requerido*</span>
+                <span *ngIf="lista1Form.get('modelo')" class="text-danger">Campo requerido*</span>
             </div>
         </div>
 
         <div class="col-md-3">
             <label>Marca</label>
-            <input type="text" class="form-control" placeholder="Dell" formControlName="marca"
+            <input type="text" class="form-control" placeholder="Marca" formControlName="marca"
             [class]="isValidField('marca')">
             <div class="invalid-feedback">
                 <span *ngIf="lista1Form.get('marca')" class="text-danger">Campo requerido*</span>
@@ -33,7 +33,7 @@
 
         <div class="col-md-3">
             <label>Nombre Pc</label>
-            <input type="text" class="form-control" placeholder="sistemasfgoa" formControlName="nombre"
+            <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre"
             [class]="isValidField('nombre')">
             <div class="invalid-feedback">
                 <span *ngIf="lista1Form.get('nombre')" class="text-danger">Campo requerido*</span>
@@ -42,7 +42,7 @@
 
         <div class="col-md-3">
             <label>N° Serie</label>
-            <input type="text" class="form-control" placeholder="QWET-00" formControlName="serie"
+            <input type="text" class="form-control" placeholder="N° Serie" formControlName="serie"
             [class]="isValidField('serie')">
             <div class="invalid-feedback">
                 <span *ngIf="lista1Form.get('serie')" class="text-danger">Campo requerido*</span>
@@ -60,7 +60,7 @@
 
         <div class="col-md-3">
             <label>Mac Address</label>
-            <input type="text" class="form-control" placeholder="00:ee:tg:09" formControlName="mac"
+            <input type="text" class="form-control" placeholder="Mac Address" formControlName="mac"
             [class]="isValidField('mac')">
             <div class="invalid-feedback">
                 <span *ngIf="lista1Form.get('mac')" class="text-danger">Campo requerido*</span>
