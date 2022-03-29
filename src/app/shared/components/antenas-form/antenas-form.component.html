@@ -10,14 +10,14 @@
 <div class="m-5">
 
     <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="antenaaForm" >
-        <div class="col-md-3">
+        <!-- <div class="col-md-3">
             <label>Artículo</label>
             <input type="text" class="form-control" placeholder="Articulo" formControlName="articuloant"
             [class]="isValidField('articuloant')">
             <div class="invalid-feedback">
                 <span *ngIf="antenaaForm.get('articuloant')" class="text-danger">Campo requerido*</span>
             </div>
-        </div>
+        </div> -->
 
         <div class="col-md-3">
             <label>Marca</label>
@@ -55,14 +55,34 @@
             </div>
         </div>
 
-        <div class="col-md-3">
-            <label>Red</label>
+        <!-- <div class="col-md-3">
+            <label>Tipo de conexión</label>
             <input type="text" class="form-control" placeholder="Red" formControlName="redant"
             [class]="isValidField('redant')">
             <div class="invalid-feedback">
                 <span *ngIf="antenaaForm.get('redant')" class="text-danger">Campo requerido*</span>
             </div>
-        </div>
+        </div> -->
+
+        <!-- Elegir tipo de conexion -->
+
+        <div class="col-md-3">
+            <label>Tipo de conexión</label>
+            <select class="form-select" formControlName="redant"
+            [class]="isValidField('redant')" required>
+              <option selected disabled value="">Elegir...</option>
+              <option>ONT</option>
+              <option>Switch</option>
+            </select>
+            <div class="invalid-feedback">
+                <span *ngIf="antenaaForm.get('redant')" class="text-danger">Campo requerido*</span>
+            </div>
+          </div>
+
+          <!-- Elegir tipo de conexion -->
+
+
+
 
         <div class="col-md-3">
             <label>Ubicación</label>

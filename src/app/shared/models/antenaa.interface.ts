@@ -1,6 +1,6 @@
 export interface Antenaa {
     id?: string;
-    articuloant: string;
+    // articuloant: string;
     marcaant: string;
     modeloant: string;
     ipant: string;

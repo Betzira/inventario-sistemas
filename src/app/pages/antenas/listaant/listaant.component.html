@@ -23,19 +23,19 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
-                <th>Artículo</th>
+                <!-- <th>Artículo</th> -->
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>Ip</th>
                 <th>Mac Address</th>
-                <th>Red</th>
+                <th>Tipo de conexión</th>
                 <th>Ubicacion</th>
                 <th class="d-none d-sm-block">Acciones</th>
             </tr>
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let itemant of antenaas$ | async" >
-                <td>{{ itemant.articuloant }}</td>
+                <!-- <td>{{ itemant.articuloant }}</td> -->
                 <td>{{ itemant.marcaant }}</td>
                 <td>{{ itemant.modeloant }}</td>
                 <td>{{ itemant.ipant }}</td>

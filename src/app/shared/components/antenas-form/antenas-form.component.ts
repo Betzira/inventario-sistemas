@@ -45,7 +45,7 @@ export class AntenasFormComponent implements OnInit {
   private initForm(): void {
     this.antenaaForm = this.fb.group(
       {
-      articuloant: ['Antena', [Validators.required]],
+      // articuloant: ['Antena', [Validators.required]],
       marcaant: ['', [Validators.required]],
       modeloant: ['', [Validators.required]],
       ipant: ['', [Validators.required]],
