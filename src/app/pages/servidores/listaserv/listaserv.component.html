@@ -23,25 +23,25 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
-                <th>Artículo</th>
+                <th>Modelo</th>
                 <th>Marca</th>
                 <th>Nombre</th>
                 <th>N° Serie</th>
                 <th>Ip</th>
                 <th>Mac Address</th>
-                <th>Tipo de servidor</th>
+                <th>Características</th>
                 <th class="d-none d-sm-block">Acciones</th>
             </tr>
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let itemserv of servidorrs$ | async" >
-                <td>{{ itemserv.articuloserv }}</td>
+                <td>{{ itemserv.modeloserv }}</td>
                 <td>{{ itemserv.marcaserv }}</td>
                 <td>{{ itemserv.nombreserv }}</td>
                 <td>{{ itemserv.serieserv }}</td>
                 <td>{{ itemserv.ipserv }}</td>
                 <td>{{ itemserv.macserv }}</td>
-                <td>{{ itemserv.tiposerv }}</td>
+                <td>{{ itemserv.caracteristicasserv }}</td>
 
                 <!-- <td class="bnt-group d-none d-sm-block"><button type="button" class="btn btn-info"><i class="bi bi-eye" style="color: green;"></i></button></td>
 

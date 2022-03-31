@@ -1,10 +1,10 @@
 export interface Servidorr {
     id?: string;
-    articuloserv: string;
+    modeloserv: string;
     marcaserv: string;
     nombreserv: string;
     serieserv: string;
     ipserv: string;
     macserv: string;
-    tiposerv: string;
+    caracteristicasserv: string;
 }
