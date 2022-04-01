@@ -23,24 +23,24 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
-                <th>Artículo</th>
                 <th>Marca</th>
                 <th>Modelo</th>
                 <th>Ubicación</th>
                 <th>N° Serie</th>
-                <th>Servicio</th>
+                <th>N° Puertos</th>
+                <th>Red</th>
                 <th>Departamento</th>
                 <th class="d-none d-sm-block">Acciones</th>
             </tr>
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let itemswi of switchhs$ | async" >
-                <td>{{ itemswi.articuloswi }}</td>
                 <td>{{ itemswi.marcaswi }}</td>
                 <td>{{ itemswi.modeloswi }}</td>
                 <td>{{ itemswi.ubiswi }}</td>
                 <td>{{ itemswi.serieswi }}</td>
-                <td>{{ itemswi.servicioswi }}</td>
+                <td>{{ itemswi.puertoswi }}</td>
+                <td>{{ itemswi.redswi }}</td>
                 <td>{{ itemswi.departamentoswi }}</td>
 
 

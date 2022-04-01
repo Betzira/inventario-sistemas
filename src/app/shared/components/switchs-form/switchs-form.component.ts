@@ -46,12 +46,12 @@ export class SwitchsFormComponent implements OnInit {
   private initForm(): void {
     this.switchhForm = this.fb.group(
       {
-      articuloswi: ['Switch', [Validators.required]],
       marcaswi: ['', [Validators.required]],
       modeloswi: ['', [Validators.required]],
       ubiswi: ['', [Validators.required]],
       serieswi: ['', [Validators.required]],
-      servicioswi: ['', [Validators.required]],
+      puertoswi: ['', [Validators.required]],
+      redswi: ['', [Validators.required]],
       departamentoswi: ['', [Validators.required]]
     });
   }
