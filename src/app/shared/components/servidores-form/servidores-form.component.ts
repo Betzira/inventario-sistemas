@@ -46,6 +46,7 @@ export class ServidoresFormComponent implements OnInit {
   private initForm(): void {
     this.servidorrForm = this.fb.group(
       {
+      tiposerv: ['', [Validators.required]],
       modeloserv: ['', [Validators.required]],
       marcaserv: ['', [Validators.required]],
       nombreserv: ['', [Validators.required]],

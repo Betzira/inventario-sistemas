@@ -10,6 +10,26 @@
 <div class="m-5">
 
     <form class="row g-3" (ngSubmit)="onSave()" [formGroup]="servidorrForm" >
+
+        <!-- Seleccionar tipo de servidor -->
+
+        <div class="col-md-3">
+            <label>Tipo</label>
+            <select class="form-select" formControlName="tiposerv"
+            [class]="isValidField('tiposerv')" required>
+              <option selected disabled value="">Elegir...</option>
+              <option>Aplicaciones</option>
+              <option>Servicios</option>
+              <option>Interfaces</option>
+              <option>Servitrón</option>
+            </select>
+            <div class="invalid-feedback">
+                <span *ngIf="servidorrForm.get('tiposerv')" class="text-danger">Campo requerido*</span>
+            </div>
+          </div>
+
+          <!-- Seleccionar tipo de servidor -->
+
         <div class="col-md-3">
             <label>Modelo</label>
             <input type="text" class="form-control" placeholder="Modelo" formControlName="modeloserv"

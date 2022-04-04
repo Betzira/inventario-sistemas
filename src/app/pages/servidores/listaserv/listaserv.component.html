@@ -23,6 +23,7 @@
         <!-- <table class="table-hover"></table> -->
         <thead style="background-color: #c9b18b; color: #505050;">
             <tr>
+                <th>Tipo</th>
                 <th>Modelo</th>
                 <th>Marca</th>
                 <th>Nombre</th>
@@ -35,6 +36,7 @@
         </thead>
         <tbody >
             <tr style="background-color: #e6dec8" *ngFor="let itemserv of servidorrs$ | async" >
+                <td>{{ itemserv.tiposerv }}</td>
                 <td>{{ itemserv.modeloserv }}</td>
                 <td>{{ itemserv.marcaserv }}</td>
                 <td>{{ itemserv.nombreserv }}</td>
