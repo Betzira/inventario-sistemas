@@ -51,7 +51,7 @@ export class ImpresorasFormComponent implements OnInit {
       modeloimp: ['', [Validators.required]],
       ubiimp: ['', [Validators.required]],
       serieimp: ['', [Validators.required]],
-      ipimp: ['', [Validators.required]]
+      ipimp: ['172.16.50.XX', [Validators.required]]
     });
   }
 

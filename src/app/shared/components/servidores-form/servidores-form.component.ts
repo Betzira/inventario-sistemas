@@ -51,7 +51,7 @@ export class ServidoresFormComponent implements OnInit {
       marcaserv: ['', [Validators.required]],
       nombreserv: ['', [Validators.required]],
       serieserv: ['', [Validators.required]],
-      ipserv: ['', [Validators.required]],
+      ipserv: ['172.16.50.XX', [Validators.required]],
       macserv: ['', [Validators.required]],
       caracteristicasserv: ['', [Validators.required]]
     });

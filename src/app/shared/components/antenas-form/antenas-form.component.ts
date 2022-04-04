@@ -48,7 +48,7 @@ export class AntenasFormComponent implements OnInit {
       // articuloant: ['Antena', [Validators.required]],
       marcaant: ['', [Validators.required]],
       modeloant: ['', [Validators.required]],
-      ipant: ['', [Validators.required]],
+      ipant: ['10.0.227.XX', [Validators.required]],
       macant: ['', [Validators.required]],
       redant: ['', [Validators.required]],
       ubiant: ['', [Validators.required]]

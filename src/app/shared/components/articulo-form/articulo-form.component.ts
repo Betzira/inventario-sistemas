@@ -51,7 +51,7 @@ export class ArticuloFormComponent implements OnInit {
       marca: ['', [Validators.required]],
       nombre: ['', [Validators.required]],
       serie: ['', [Validators.required]],
-      ip: ['172.16.50.', [Validators.required]],
+      ip: ['172.16.50.XX', [Validators.required]],
       mac: ['', [Validators.required]],
       accesorios: ['', [Validators.required]],
       ubicacion: ['', [Validators.required]]
