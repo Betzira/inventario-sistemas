@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
 
-  { path: '', redirectTo:'/inicio', pathMatch:'full' },
+  { path: '', redirectTo:'/login', pathMatch:'full' },
   
   { path: 'inicio', loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioModule) }, 
   
@@ -61,7 +61,9 @@ const routes: Routes = [
 
   { path: 'listares', loadChildren: () => import('./pages/resguardos/listares/listares.module').then(m => m.ListaresModule) },
 
-  { path: 'nuevores', loadChildren: () => import('./pages/resguardos/nuevores/nuevores.module').then(m => m.NuevoresModule) }
+  { path: 'nuevores', loadChildren: () => import('./pages/resguardos/nuevores/nuevores.module').then(m => m.NuevoresModule) },
+
+  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }
 
 ];
 
